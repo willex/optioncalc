@@ -6,15 +6,15 @@ Max Pain / Option Pain command line calculator in Perl
 In Options Trading, the Max Pain theory, sometimes also called Strike Price Pegging focuses on the idea that towards expiration date the price of a stock will move towards its strike price thus inflicting most losses (pain) to the majority of option traders as all parties with high investments try to steer the stock price towards their calls or puts to minimize their losses. Max Pain calculations on our site use g intraday data and are up to date to within 30 minutes. 
 disclaimer
 ==========
-By using this application you agree that BluSoft Inc. can in no way be held responsible for any calculation inaccuracies or financial losses that might occur when using OptionCalc. Furthermore the data utilized is provided by public sources and BluSoft Inc. will and cannot be held responsible for its accuracy. 
+By using this script you agree that the Author can in no way be held responsible for any calculation inaccuracies or financial losses that might occur when using OptionCalc. Furthermore the data utilized is provided by public sources and BluSoft Inc. will and cannot be held responsible for its accuracy. 
 
 installation
 ============
 the perl script required the following modules to retrieve stock & option information from Yahoo.
 
-use Finance::Quote;
-use Finance::QuoteOptions;
-use Data::Dumper;
+- Finance::Quote
+- Finance::QuoteOptions
+- Data::Dumper
 
 usage
 =====
