@@ -8,6 +8,14 @@ disclaimer
 ==========
 By using this application you agree that BluSoft Inc. can in no way be held responsible for any calculation inaccuracies or financial losses that might occur when using OptionCalc. Furthermore the data utilized is provided by public sources and BluSoft Inc. will and cannot be held responsible for its accuracy. 
 
+installation
+============
+the perl script required the following modules to retrieve stock & option information from Yahoo.
+
+use Finance::Quote;
+use Finance::QuoteOptions;
+use Data::Dumper;
+
 usage
 =====
 
@@ -18,14 +26,15 @@ simply execute the perl job and it will ask you for:
 3. Short or Detailed View (e.g. 1 or 2)
 
 Here are examples of the output:
-Enter Stock Symbol (e.g. IBM): AAPL
 
-Enter option expiration month (e.g. 201010): 201404
+    Enter Stock Symbol (e.g. IBM): AAPL
 
-Select display mode
-  1: Short View
-  2: Detailed View
-  (1 or 2) default=1 :
+    Enter option expiration month (e.g. 201010): 201404
+
+    Select display mode
+      1: Short View
+      2: Detailed View
+      (1 or 2) default=1 :
 
 +----------------------------------------------------------------+
 | COMPANY NAME      : Apple Inc.                                 |
@@ -113,3 +122,7 @@ Select display mode
 commercial application
 ======================
 if you wish to incorporate this batch job into a commercial applicaton please contact me first for approval. I also created a more advanced web version incl. history and addt. calculations under: www.option-calc.com.
+
+Author
+======
+Alexander Wilhelm <alex.wilhelm@gmx.at>
